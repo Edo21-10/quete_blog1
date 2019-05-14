@@ -53,13 +53,13 @@ If the entities are not stored in a bundle, and if the classes do not exist,
 the command has no way to guess where they should be generated. In this case,
 you must provide the <comment>--path</comment> option:
 
-  <info>php %command.full_name% Blog/Entity --path=src/</info>
+  <info>php %command.full_name% blog/Entity --path=src/</info>
 
 By default, the unmodified version of each entity is backed up and saved
 (e.g. Product.php~). To prevent this task from creating the backup file,
 pass the <comment>--no-backup</comment> option:
 
-  <info>php %command.full_name% Blog/Entity --no-backup</info>
+  <info>php %command.full_name% blog/Entity --no-backup</info>
 
 <error>Important:</error> Even if you specified Inheritance options in your
 XML or YAML Mapping files the generator cannot generate the base and

@@ -34,9 +34,9 @@ use Symfony\Component\Routing\RouteCollection;
  * Here is an example of how you should be able to use it:
  *
  *     /**
- *      * @Route("/Blog")
+ *      * @Route("/blog")
  *      * /
- *     class Blog
+ *     class blog
  *     {
  *         /**
  *          * @Route("/", name="blog_index")
