@@ -140,3 +140,6 @@ a427a2,127.0.0.1,GET,http://localhost:8001/blog/show/kahlid-systeme,1558000145,,
 463644,127.0.0.1,GET,http://localhost:8001/blog/show/kahlid-systeme,1558000194,,200
 2ef6dd,127.0.0.1,GET,http://localhost:8001/blog/show/je-mappelle-emilie-jolie,1558000246,,200
 98f5e9,127.0.0.1,GET,http://localhost:8001/blog/show/tiph-haine,1558000429,,200
+98de26,127.0.0.1,GET,http://localhost:8000/,1558341410,,200
+eea8ef,127.0.0.1,GET,http://localhost:8000/favicon.ico,1558341411,11a363,200
+11a363,127.0.0.1,GET,http://localhost:8000/favicon.ico,1558341411,,404
