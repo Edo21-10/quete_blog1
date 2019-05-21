@@ -16,6 +16,6 @@ if (!\class_exists(srcApp_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerDvjTiNP\srcApp_KernelDevDebugContainer([
     'container.build_hash' => 'DvjTiNP',
-    'container.build_id' => '96a95fc8',
-    'container.build_time' => 1558344341,
+    'container.build_id' => '0abb7666',
+    'container.build_time' => 1558426521,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerDvjTiNP');

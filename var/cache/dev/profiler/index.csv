@@ -143,3 +143,6 @@ a427a2,127.0.0.1,GET,http://localhost:8001/blog/show/kahlid-systeme,1558000145,,
 98de26,127.0.0.1,GET,http://localhost:8000/,1558341410,,200
 eea8ef,127.0.0.1,GET,http://localhost:8000/favicon.ico,1558341411,11a363,200
 11a363,127.0.0.1,GET,http://localhost:8000/favicon.ico,1558341411,,404
+d46514,127.0.0.1,GET,http://localhost:8000/,1558423082,,200
+3c4459,127.0.0.1,GET,http://localhost:8000/favicon.ico,1558423082,317baa,200
+317baa,127.0.0.1,GET,http://localhost:8000/favicon.ico,1558423082,,404
