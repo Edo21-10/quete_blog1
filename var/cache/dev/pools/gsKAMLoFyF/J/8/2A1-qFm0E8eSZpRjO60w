@@ -8,14 +8,14 @@
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/blog/show/{slug}',
+                    '/{slug}',
                 ],
                 'name' => [
-                    'link_article',
+                    'blog_show',
                 ],
-                'requirements' => [
+                'defaults' => [
                     [
-                        'slug' => '[0-9a-z-]*',
+                        'slug' => null,
                     ],
                 ],
             ],
