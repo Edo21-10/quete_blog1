@@ -34,7 +34,7 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
         'index' => [[], ['_controller' => 'App\\Controller\\BlogController::index'], [], [['text', '/']], [], []],
         'blog_show' => [['slug'], ['slug' => null, '_controller' => 'App\\Controller\\BlogController::show'], [], [['variable', '/', '[^/]++', 'slug', true]], [], []],
-        'category_show' => [['categoryName'], ['categoryName' => null, '_controller' => 'App\\Controller\\BlogController::showByCategory'], [], [['variable', '/', '[^/]++', 'categoryName', true], ['text', '/blog/category']], [], []],
+        'category_show' => [['id'], ['_controller' => 'App\\Controller\\BlogController::showByCategory'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/blog/category']], [], []],
         'app_index' => [[], ['_controller' => 'App\\Controller\\DefaultController::index'], [], [['text', '/index']], [], []],
     ];
         }

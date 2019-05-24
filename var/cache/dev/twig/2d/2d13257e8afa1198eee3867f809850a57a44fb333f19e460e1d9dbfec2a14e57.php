@@ -63,7 +63,7 @@ class __TwigTemplate_d627d1130e329e6ded2d3f6cdb2821310084aa05e1841d925a63beab5bd
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo twig_escape_filter($this->env, (isset($context["categoryName"]) || array_key_exists("categoryName", $context) ? $context["categoryName"] : (function () { throw new RuntimeError('Variable "categoryName" does not exist.', 4, $this->source); })()), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["name"]) || array_key_exists("name", $context) ? $context["name"] : (function () { throw new RuntimeError('Variable "name" does not exist.', 4, $this->source); })()), "html", null, true);
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -100,31 +100,22 @@ class __TwigTemplate_d627d1130e329e6ded2d3f6cdb2821310084aa05e1841d925a63beab5bd
 
         // line 9
         echo "
-    <h1>";
-        // line 10
-        echo twig_escape_filter($this->env, (isset($context["categoryName"]) || array_key_exists("categoryName", $context) ? $context["categoryName"] : (function () { throw new RuntimeError('Variable "categoryName" does not exist.', 10, $this->source); })()), "html", null, true);
-        echo "</h1>
-
     ";
-        // line 12
+        // line 10
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["articles"]) || array_key_exists("articles", $context) ? $context["articles"] : (function () { throw new RuntimeError('Variable "articles" does not exist.', 12, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["articles"]) || array_key_exists("articles", $context) ? $context["articles"] : (function () { throw new RuntimeError('Variable "articles" does not exist.', 10, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
-            // line 13
+            // line 11
             echo "        <div>
             <h2>";
-            // line 14
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "id", [], "any", false, false, false, 14), "html", null, true);
+            // line 12
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "id", [], "any", false, false, false, 12), "html", null, true);
             echo " Real article s title : ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "title", [], "any", false, false, false, 14), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "title", [], "any", false, false, false, 12), "html", null, true);
             echo "</h2>
-            <h3>Category : ";
-            // line 15
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["article"], "category", [], "any", false, false, false, 15), "name", [], "any", false, false, false, 15), "html", null, true);
-            echo "</h3>
             <p>";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "content", [], "any", false, false, false, 16), "html", null, true);
+            // line 13
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "content", [], "any", false, false, false, 13), "html", null, true);
             echo "</p>
         </div>
     ";
@@ -132,10 +123,10 @@ class __TwigTemplate_d627d1130e329e6ded2d3f6cdb2821310084aa05e1841d925a63beab5bd
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 19
+        // line 16
         echo "
     <a href=\"";
-        // line 20
+        // line 17
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("index");
         echo "\">
         Back to homepage.
@@ -162,7 +153,7 @@ class __TwigTemplate_d627d1130e329e6ded2d3f6cdb2821310084aa05e1841d925a63beab5bd
 
     public function getDebugInfo()
     {
-        return array (  139 => 20,  136 => 19,  127 => 16,  123 => 15,  117 => 14,  114 => 13,  110 => 12,  105 => 10,  102 => 9,  93 => 8,  76 => 6,  58 => 4,  36 => 2,);
+        return array (  130 => 17,  127 => 16,  118 => 13,  112 => 12,  109 => 11,  105 => 10,  102 => 9,  93 => 8,  76 => 6,  58 => 4,  36 => 2,);
     }
 
     public function getSourceContext()
@@ -170,18 +161,15 @@ class __TwigTemplate_d627d1130e329e6ded2d3f6cdb2821310084aa05e1841d925a63beab5bd
         return new Source("{# templates/blog/show.html.twig #}
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ categoryName }}{% endblock %}
+{% block title %}{{ name }}{% endblock %}
 
 {% block stylesheets %}{% endblock %}
 
 {% block body %}
 
-    <h1>{{ categoryName }}</h1>
-
     {% for article in articles %}
         <div>
             <h2>{{ article.id }} Real article s title : {{ article.title }}</h2>
-            <h3>Category : {{ article.category.name }}</h3>
             <p>{{ article.content }}</p>
         </div>
     {% endfor %}

@@ -8,15 +8,10 @@
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/blog/category/{categoryName}',
+                    '/blog/category/{id}',
                 ],
                 'name' => [
                     'category_show',
-                ],
-                'defaults' => [
-                    [
-                        'categoryName' => null,
-                    ],
                 ],
             ],
         ],
