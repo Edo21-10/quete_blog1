@@ -32,9 +32,10 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
         '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception::showAction'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
         '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
-        'index' => [[], ['_controller' => 'App\\Controller\\BlogController::index'], [], [['text', '/']], [], []],
-        'blog_show' => [['slug'], ['slug' => null, '_controller' => 'App\\Controller\\BlogController::show'], [], [['variable', '/', '[^/]++', 'slug', true]], [], []],
+        'index' => [[], ['_controller' => 'App\\Controller\\BlogController::index'], [], [['text', '/blog']], [], []],
+        'blog_show' => [['slug'], ['slug' => null, '_controller' => 'App\\Controller\\BlogController::show'], [], [['variable', '/', '[^/]++', 'slug', true], ['text', '/blog/show']], [], []],
         'category_show' => [['id'], ['_controller' => 'App\\Controller\\BlogController::showByCategory'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/blog/category']], [], []],
+        'addcategory' => [[], ['_controller' => 'App\\Controller\\CategoryController::add'], [], [['text', '/blog/addcategory']], [], []],
         'app_index' => [[], ['_controller' => 'App\\Controller\\DefaultController::index'], [], [['text', '/index']], [], []],
     ];
         }
