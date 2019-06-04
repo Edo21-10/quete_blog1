@@ -1,0 +1,22 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}All articles by tags{% endblock %}
+
+{% block body %}
+    <strong>Tag : {{ tag.name }}</strong>
+    <ul>
+
+        {% for article in tag.articles %}
+            {{ article.title }}
+            <li>{{ tag.id }} </li>
+        {% else %}
+            <li>No tags for this article</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ path('index') }}">
+        Back to homepage.
+    </a>
+
+{% endblock %}
